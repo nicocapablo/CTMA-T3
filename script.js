@@ -1,694 +1,534 @@
 // --- PREGUNTAS ---
 const preguntas = [
   {
-    texto: "Si hemos de abrir un establecimiento en Cataluña, como por ejemplo un taller de reparación de automóviles, como mínimo, ¿a qué normativa estaremos sometidos obligatoriamente?",
-    opciones: [
-      "a) A la Ley 16/2002 de Prevención y Control Integrados de la Contaminación.",
-      "b) A la Ley 21/1990 de Intervención Integral de la Administración Ambiental (IIAA).",
-      "c) Al Decreto 2414/1961 que publica el Reglamento de Actividades Molestas, Insalubres, Nocivas y Peligrosas.",
-      "d) A la Ley 20/2009 de Prevención y Control Ambiental de las Actividades (PCAA)."
-    ],
-    correcta: "d"
-  },
-  {
-    texto: "Señala la respuesta correcta:",
-    opciones: [
-      "a) Los escenarios futuros de clima predicen más situaciones extremas en términos de frío.",
-      "b) Los modelos de predicción climática a escala regional ofrecen una menor precisión que los modelos globales.",
-      "c) Se prevé un incremento mayor de temperatura bajo el escenario SSP5-8.5 que en el escenario SSP1-1.9.",
-      "d) En la subregión Mediterránea, se prevé un incremento de la precipitación a finales de siglo."
-    ],
-    correcta: "c"
-  },
-  {
-    texto: "Señala la respuesta falsa:",
-    opciones: [
-      "a) El Mecanismo de Aplicación Conjunta pone en contacto países en vías de desarrollo y países ya desarrollados.",
-      "b) El Comercio de Emisiones existe tanto a nivel de países como de instalaciones.",
-      "c) Los países en vías de desarrollo no están obligados a implementar Mecanismos de Desarrollo Limpio.",
-      "d) Tanto en el Mecanismo de Aplicación Conjunta como en el Mecanismo de Desarrollo Limpio, la reducción de emisiones se calcula a partir de las que se producirían en ausencia de la actividad proyectada."
-    ],
-    correcta: "a"
-  },
-  {
-    texto: "En el marco del concepto de 'Desarrollo sostenible', ¿cuál de las siguientes respuestas es falsa?",
-    opciones: [
-      "a) La satisfacción de las necesidades provoca una presión exponencial sobre los recursos.",
-      "b) El desarrollo sostenible se realiza a través del consumo de bienes y servicios.",
-      "c) Para ser sostenible, se deben satisfacer las necesidades del presente aun comprometiendo la capacidad de las generaciones futuras para atender sus propias necesidades.",
-      "d) La elasticidad de los factores implica suplir el agotamiento de materias primas por una mayor inversión que permita aumentar la eficiencia de los recursos o encontrar materiales sustitutivos."
-    ],
-    correcta: "c"
-  },
-  {
-    texto: "¿Cuál de las siguientes afirmaciones es correcta?",
-    opciones: [
-      "a) El Protocolo de Kioto todavía está vigente.",
-      "b) El Protocolo de Kioto entró en vigor cuando lo firmaron 55 países representando el 55% de las emisiones de gases de efecto invernadero emitidas en el año 1990.",
-      "c) El Protocolo de Kioto regula sólo las emisiones de CO2.",
-      "d) El Acuerdo de París ratificado el 2016 tiene como objetivo la reducción de las emisiones de gases de efecto invernadero en un 100% el 2030."
-    ],
-    correcta: "b"
-  },
-  {
-    texto: "En el marco del Análisis de Ciclo de Vida, señala la respuesta correcta:",
-    opciones: [
-      "a) La identificación y cuantificación de las entradas y salidas de cada proceso unitario forma parte de la etapa de análisis de inventario.",
-      "b) La asignación de pesos (weighting) a las diferentes categorías de impacto se lleva a cabo mediante un proceso científico.",
-      "c) La definición de los límites del sistema se realiza durante la etapa de análisis del inventario.",
-      "d) Un aspecto incluido en el inventario sólo puede contribuir a una categoría de impacto ambiental, no a entre otras."
-    ],
-    correcta: "a"
-  },
-  {
-    texto: "En el marco de los Análisis de Ciclo de Vida, la caracterización:",
-    opciones: [
-      "a) es una etapa del análisis de inventario.",
-      "b) transforma los datos recogidos en el inventario en diferentes categorías de impacto utilizando factores de conversión científicos.",
-      "c) identifica las principales categorías de impactos ambientales.",
-      "d) clasifica los impactos ambientales en impactos locales, regionales o globales."
-    ],
-    correcta: "b"
-  },
-  {
-    texto: "Respecto a los regímenes de intervención administrativa de la Ley de Prevención y Control Ambiental de las Actividades, ¿cuál de las siguientes afirmaciones es falsa?",
-    opciones: [
-      "a) En el Anexo I.1, puede iniciarse la actividad inmediatamente después de haberse presentado el proyecto bajo la responsabilidad del propietario y del técnico.",
-      "b) Las actividades del Anexo I.1 están sometidas a control cada 4 años.",
-      "c) Las actividades del Anexo I.1 están sujetas a renovación cuando lo solicite el organismo ambiental competente, de acuerdo con la publicación de las conclusiones relativas a las Mejores Técnicas Disponibles.",
-      "d) Las actividades del Anexo I.1 están sujetas al Régimen de autorización ambiental con declaración de impacto ambiental."
-    ],
-    correcta: "a"
-  },
-  {
-    texto: "¿Cuál de las siguientes afirmaciones es correcta?",
-    opciones: [
-      "a) La huella ecológica mide la máxima población de una especie concreta que puede ser soportada por un hábitat determinado.",
-      "b) La capacidad de carga representa la superficie de terreno o de agua ecológicamente productiva necesarios para generar los recursos y asimilar los residuos de una población determinada.",
-      "c) En España existe un superávit ecológico.",
-      "d) Todas las respuestas anteriores son falsas."
-    ],
-    correcta: "b"
-  },
-  {
-    texto: "¿Cuál de las siguientes afirmaciones es falsa?",
-    opciones: [
-      "a) Los Sistemas de Gestión Ambiental se aplican a productos.",
-      "b) Los Sistemas de Gestión Ambiental deben ser revisados periódicamente.",
-      "c) Tener un Sistema de Gestión Ambiental es voluntario.",
-      "d) El ahorro de recursos es una motivación para la implantación de Sistemas de Gestión Ambiental."
-    ],
-    correcta: "a"
-  },
-  {
-    texto: "En el marco de los Análisis de Ciclo de Vida, señala la respuesta correcta:",
-    opciones: [
-      "a) El calentamiento global, el agotamiento de la capa de ozono, la acidificación y la eutrofización, entre otras, categorías de impacto incluidas dentro de un Análisis de Ciclo de Vida.",
-      "b) La acidificación es un impacto regional.",
-      "c) El factor de caracterización para el calentamiento global es el Potencial de Calentamiento Global (GWP, Global Warming Potential).",
-      "d) Todas las respuestas son correctas."
-    ],
-    correcta: "d"
-  },
-  {
-    texto: "En relación al Análisis de Ciclo de Vida de las placas solares fotovoltaicas, señala la respuesta correcta:",
-    opciones: [
-      "a) Las placas solares fotovoltaicas consumen más energía durante su fabricación que la que proporcionan durante su vida útil.",
-      "b) El análisis sobre la rentabilidad energética de las placas solares debe tener en cuenta la ubicación de las mismas.",
-      "c) En el Análisis de Ciclo de Vida de las placas solares fotovoltaicas no se tuvo que realizar ninguna hipótesis porque todos los datos eran conocidos.",
-      "d) Ninguna de las anteriores, todas son falsas."
-    ],
-    correcta: "b"
-  },
-  {
-    texto: "Señala la respuesta correcta:",
-    opciones: [
-      "a) El impacto de la eutrofización es a nivel mundial.",
-      "b) La acidificación implica niveles altos de pH en la atmósfera.",
-      "c) Los anticiclones prolongados contribuyen a aumentar el impacto del smog en las ciudades.",
-      "d) El agujero de la capa de ozono no tiene vía de solución."
-    ],
-    correcta: "c"
-  },
-  {
-    texto: "De acuerdo con la Directiva 2010/75/EC sobre Emisiones Industriales, señala la respuesta falsa:",
-    opciones: [
-      "a) Los Valores Límite de Emisión (VLE) pueden definirse como la concentración y/o la masa de sustancias contaminantes contenidas en las emisiones procedentes de instalaciones.",
-      "b) Los Valores Límite de Emisión permitidos se fijan en los Anexos de la Directiva IPPC.",
-      "c) Los documentos técnicos de referencia para los distintos sectores industriales se denominan BREF.",
-      "d) La publicación de los BREF tiene como objetivo dar a conocer las BAT o MTD (Mejores Técnicas Disponibles)."
-    ],
-    correcta: "b"
-  },
-  {
-    texto: "¿Cuál de las siguientes afirmaciones es cierta?",
-    opciones: [
-      "a) Los Sistemas de Gestión Ambiental están basados en el ciclo de Meadows.",
-      "b) Los Sistemas de Gestión Ambiental no solo deben centrarse en los impactos ambientales habituales de la zona de producción, sino también en los producidos en otros espacios auxiliares.",
-      "c) Las empresas del Anexo II que disponen de un Sistema de Gestión Ambiental están exentas de los controles establecidos por la Ley 20/2009 (PCAA).",
-      "d) La empresa que obtiene un Sistema de Gestión Ambiental demuestra que no contamina."
-    ],
-    correcta: "b"
-  },
-  {
-    texto: "Señala la respuesta falsa:",
-    opciones: [
-      "a) Solo las industrias manufactureras pueden implementar un sistema de gestión ambiental.",
-      "b) El número de empresas certificadas con ISO 14001 es mucho mayor que el número de empresas registradas con un sistema EMAS.",
-      "c) El promotor del Reglamento EMAS es la administración pública (Unión Europea).",
-      "d) La adopción de la norma ISO 14001 es voluntaria."
-    ],
-    correcta: "a"
-  },
-  {
-    texto: "Señala la respuesta verdadera:",
-    opciones: [
-      "a) Una actividad que emite por encima del Valor Límite de Emisión es ilegal.",
-      "b) Una actividad que emite por encima del valor umbral fijado en el Portal de Emisiones Industriales no es legal.",
-      "c) De acuerdo con la Directiva de Emisiones Industriales, una nueva actividad debe adoptar un enfoque basado en la reacción a la contaminación.",
-      "d) La última actualización de la Directiva sobre Emisiones Industriales introduce incentivos fiscales para aquellas industrias que logren reducir sus emisiones por debajo de los límites establecidos."
-    ],
-    correcta: "a"
-  },
-  {
-    texto: "¿Cuál de los siguientes elementos es una parte fundamental de la fase de Act (actuar) en un Sistema de Gestión Ambiental (SGA)?",
-    opciones: [
-      "a) Evaluación de riesgos y oportunidades.",
-      "b) Definición de roles y responsabilidades.",
-      "c) Análisis de los costes de implementación del Sistema de Gestión Ambiental.",
-      "d) Revisión del desempeño del SGA y la adecuación de las políticas y objetivos ambientales."
-    ],
-    correcta: "d"
-  },
-  {
-    texto: "¿Cuál de los siguientes pasos es esencial en la fase de 'Evaluación de Impacto' de un Análisis de Ciclo de Vida (ACV)?",
-    opciones: [
-      "a) Establecer los objetivos y alcance del estudio.",
-      "b) Identificar y cuantificar los impactos ambientales potenciales.",
-      "c) Recopilar datos sobre las entradas y salidas del sistema.",
-      "d) Interpretar los resultados y tomar decisiones basadas en ellos."
-    ],
-    correcta: "b"
-  },
-  {
-    texto: "¿Cuál de las siguientes afirmaciones es falsa?",
-    opciones: [
-      "a) La capa de ozono no tiene relación directa con el cambio climático.",
-      "b) La capa de ozono es una región de la atmósfera que protege la Tierra de la radiación solar ultravioleta.",
-      "c) La capa de ozono regula la temperatura global del planeta y es esencial para prevenir el cambio climático.",
-      "d) La degradación de la capa de ozono es causada principalmente por los clorofluorocarbonos (CFCs) liberados por actividades humanas."
-    ],
-    correcta: "c"
-  },
-  {
-  texto: "En relació al balanç energètic de la Terra, assenyala quina de les següents afirmacions és falsa:",
+  texto: "Què és l’Anàlisi de Cicle de Vida (ACV)?",
   opciones: [
-    "a) La fracció d’energia solar que arriba a la terra es trobara bàsicament en l’espectre visible",
-    "b) Els gasos de l'atmosfera són transparents a les radiacions d'ona curta però no a les radiacions d'ona llarga",
-    "c) El principal causant de l'escalfament global de la Terra és la variació en la quantitat de radiació terrestre absorbida",
-    "d) Aplicant la llei de Wein es pot trobar la radiació emesa per la Terra (aproximació de la Terra a un cos negre que està a una determinada temperatura)"
-  ],
-  correcta: "c"
-},
-{
-  texto: "Quina de les següents afirmacions és falsa:",
-  opciones: [
-    "a) La Cimera de Kyoto (1997) tenia com a objectiu principal la reducció de les emissions de gasos d'efecte hivernacle",
-    "b) Com a resultat de la Cimera de Kyoto (1997) es va redatar l'Agenda 21, document que tenia com a objecti afavorir un model de desenvolupament respectuós amb el medi ambient",
-    "c) A la Cimera de la Terra celebrada a Rio de Janeiro (1992) es donà especial importancia als problemes del canvi climatic i la biodiversitat",
-    "d) A la Cimera de la Terra celebrada a Rio de Janeiro (1992) es conclogué com a punt clau la necessitat de passar d'una acció reparadora a una acció de prevenció"
+    "a) Un procediment econòmic per reduir costos de producció",
+    "b) Un procediment objectiu per avaluar els impactes ambientals associats al cicle de vida d’un producte",
+    "c) Un estudi de mercat per avaluar la viabilitat comercial d’un producte",
+    "d) Un indicador social de sostenibilitat"
   ],
   correcta: "b"
 },
 {
-  texto: "Quina de les següents respostes no forma part de les arees d'actuació prioritária del VI Programa d'Acció Ambiental de la UE?",
+  texto: "Quin és l’objectiu principal de l’ACV?",
   opciones: [
-    "a) Intentar resoldre el canvi climatic",
-    "b) Reducció del forat de la capa d'ozó",
-    "c) Protegir la naturalesa i la biodiversitat",
-    "d) Utilització sostenible dels recursos naturals"
+    "a) Comparar productes i processos per escollir el de menor impacte ambiental",
+    "b) Determinar el cost econòmic d’un producte",
+    "c) Avaluar la rendibilitat energètica d’un procés",
+    "d) Determinar la vida útil d’un recurs natural"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quines són les entrades (inputs) principals d’un ACV?",
+  opciones: [
+    "a) Residus i emissions",
+    "b) Energia, aigua i matèries primeres consumides",
+    "c) Només emissions a l’aire",
+    "d) Beneficis econòmics"
   ],
   correcta: "b"
 },
 {
-  texto: "A quin tipus de model correspon un ecosistema amb una entrada d'energia limitada, una entrada de recursos limitada i una sortida de recursos limitada?",
+  texto: "Quines són les sortides (outputs) d’un ACV?",
   opciones: [
-    "a) Model tipus I",
-    "b) Model tipus II",
-    "c) Model tipus III",
-    "d) Model híbrid entre el Tipus I i el Tipus II"
-  ],
-  correcta: "a"
-},
-{
-  texto: "Respecte els límits de creixement sostenible, quina de les següents afirmacions és certa:",
-  opciones: [
-    "a) La carrega ecologica d'un recurs es considera sostenible quan aquesta és legal o inferior a la seva capacitat de carrega (L=<KL)",
-    "b) El cas d'un recurs sense carrega provoca un creixement insostenible",
-    "c) Un creixement sostenible afavoreix que la capacitat de carrega futura sigui més petita que la capacitat de carrega actual (K'L<KL)",
-    "d) Per a que el creixement d'una determinada regió sigui sostenible, s'obliga a que la petjada ecològica associada al seu consum de recursos sigui superior a la superfície de la propia regió"
-  ],
-  correcta: "a"
-},
-{
-  texto: "Respecte als diferents enfocaments de la sostenibilitat, quina de les següents afirmacions és certa?",
-  opciones: [
-    "a) L'enfocament de la sostenibilitat forta es basa en l'anomenada economia ambiental",
-    "b) L'enfocament de la sostenibilitat débil es basa en la desmaterialització de l'economia",
-    "c) L'enfocament de la sostenibilitat dèbil inclou afegir un sobrecost economic als productes, destinats a restablir les materies primeres utilitzades",
-    "d) L'economia ambiental té com objectiu la reducció/substitució de l'us del capital per matèries primeres"
-  ],
-  correcta: "a"
-},
-{
-  texto: "Respecte al forat de la capa d'ozó, quina unitat s'utilitza per indicar la concentració de l'ozó en l'atmosfera?",
-  opciones: [
-    "a) Dobson",
-    "b) GWM",
-    "c) MTL",
-    "d) Cap de les anteriors"
-  ],
-  correcta: "a"
-},
-{
-  texto: "Respecte als principals problemes mediambientals, quina de les següents substàncies NO és rellevant per la contaminació fotoquímica?",
-  opciones: [
-    "a) CH4",
-    "b) COVs",
-    "c) CO2",
-    "d) Cap de les anteriors"
-  ],
-  correcta: "c"
-},
-{
-  texto: "Respecte als principals problemes mediambientals, quina de les següents afirmacions és falsa?",
-  opciones: [
-    "a) L'esgotament de la capa d'ozó es produit sobretot per l'emissió de CFCs i halons",
-    "b) L'acidificació és deguda sobretot a les emissions d'oxid de sofre i diòxid de nitrogen",
-    "c) L'eutrofització és deguda principalment a un excés de COVs (compostos orgànics volàtils) en l'aire",
-    "d) La contaminació fotoquímica pot causar problemes respiratoris com l'asma"
-  ],
-  correcta: "c"
-},
-{
-  texto: "Amb quines sigles es coneix l'ordenança municipal que regula la tramitació de llicències ambientals a Barcelona?",
-  opciones: [
-    "a) IPPC",
-    "b) LIIA",
-    "c) PCAA",
-    "d) OMAIIAA"
-  ],
-  correcta: "d"
-},
-{
-  texto: "Segons la PCAA, si sol·licitem una autorització ambiental, i en el temps establert no es resolt de manera expressa, indiqueu la resposta incorrecta:",
-  opciones: [
-    "a) Entendrem l'autorització com positiva per silenci administratiu",
-    "b) Entendrem l'autorització com negativa per silenci administratiu",
-    "c) La no-resolució en el termini establert indica a la persona sol·licitant que ha estat desestimada la sol·licitud d'autorització",
-    "d) En el cas de no-resolució, podem presentar un recurs administratiu"
-  ],
-  correcta: "a"
-},
-{
-  texto: "Respecte a qui és i qui no és tècnic competent en projectes tècnics ambientals, indiqueu la resposta incorrecta:",
-  opciones: [
-    "a) La Llei no determina quines titulacions són les habilitades. Diu que han d'estar signades per tècnics competents.",
-    "b) Un biòleg no pot ser en cap cas tècnic competent en projectes ambientals",
-    "c) Com a norma general, si el projecte és senzill i les instal·lacions són complementàries a l'edifici, es pot considerar que un arquitecte és un tècnic competent",
-    "d) Com a norma general, els projectes de l'annex II (incidència mediambiental mitjana) tant els pot fer un enginyer, enginyer tècnic, arquitecte tècnic o arquitectes"
+    "a) Productes acabats i beneficis econòmics",
+    "b) Residus sòlids, líquids i gasosos",
+    "c) Energia i matèries primeres",
+    "d) Materials reciclats"
   ],
   correcta: "b"
 },
 {
-  texto: "Respecte als contaminants orgànics persistents, quina de les següents informacions és falsa?",
+  texto: "Quin any es van fer els primers estudis d’ACV sobre una ampolla de plàstic de Coca-Cola?",
   opciones: [
-    "a) Els COPs són substàncies organoclorades",
-    "b) El PCB és un tipus de plaguicida força habitual en països africans",
-    "c) Les dioxines i els furans s'inclouen dintre dels anomenats 'dotze bruts'",
-    "d) El conveni d'Estocolm és un acord multilateral per adoptar mesures de control per eliminar o restringir l'ús dels COPs"
+    "a) 1969",
+    "b) 1975",
+    "c) 1987",
+    "d) 1997"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina va ser la causa dels primers estudis d’ACV durant els anys 70?",
+  opciones: [
+    "a) La crisi del petroli",
+    "b) L’escassetat d’aigua",
+    "c) L’augment de la població",
+    "d) La contaminació acústica"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Durant els anys 90, quina entitat va unificar la metodologia de l’ACV?",
+  opciones: [
+    "a) SETAC (Societat de Toxicologia i Química Ambiental)",
+    "b) ONU Medi Ambient",
+    "c) FAO",
+    "d) EPA"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quin any es van publicar les normes ISO relacionades amb l’ACV?",
+  opciones: [
+    "a) 1990",
+    "b) 1997",
+    "c) 2001",
+    "d) 2015"
   ],
   correcta: "b"
 },
 {
-  texto: "Quin dels següents orgànics persistents es produeix de manera accidental?",
+  texto: "Quina norma defineix els principis i l’estructura general d’un ACV?",
   opciones: [
-    "a) Les dioxines i furans",
-    "b) Els PCBs",
-    "c) DDT",
-    "d) Tots es produeixen de manera voluntària per aconseguir algun objectiu. Cap és accidental"
-  ],
-  correcta: "a"
-},
-{
-  texto: "A quins dels següents productes no poden concedir-se etiquetes ecològiques?",
-  opciones: [
-    "a) Mobiliari",
-    "b) Ordinadors",
-    "c) Medicaments",
-    "d) No hi ha restriccions de cap dels productes anteriors sempre que superin favorablement les proves corresponents"
-  ],
-  correcta: "c"
-},
-{
-  texto: "Quina de les següents afirmacions és falsa?",
-  opciones: [
-    "a) Dins dels tipus de riscs associats a instal·lacions industrials, els riscs majors són els considerats com a riscs mediambientals",
-    "b) La responsabilitat penal acompanya a les responsabilitats administratives i civils quan s'han de reparar danys al medi ambient",
-    "c) Les Ecoetiquetes poden concedir-se a productes i serveis",
-    "d) A Catalunya es poden trobar dos tipus d'etiquetes ecològiques: el Distintiu de Garantia de Qualitat Ambiental i l'Etiqueta Ecològica de la Unió Europea"
-  ],
-  correcta: "a"
-},
-{
-  texto: "Respecte als sistemes de Gestió Ambiental EMAS i ISO 14000, quina de les següents afirmacions és falsa?",
-  opciones: [
-    "a) El promotor del Reglament EMAS és l'Administració Pública (UE) mentre que el de la norma ISO 14001 és una entitat privada (International Standard Organization)",
-    "b) En el Reglament EMAS no és obligatori comunicar externament els resultats, mentre que en la norma ISO 14001 sí que existeix aquesta obligació",
-    "c) Tant el Reglament EMAS com la ISO 14001 són d'aplicació voluntàries",
-    "d) El Reglament EMAS és d'àmbit europeu mentre que la norma ISO 14001 és d'àmbit internacional"
+    "a) ISO 14001",
+    "b) ISO 14040",
+    "c) ISO 14044",
+    "d) ISO 26000"
   ],
   correcta: "b"
 },
 {
-  texto: "En el marco del concepto de 'Desarrollo sostenible', ¿cuál de las siguientes respuestas es falsa?",
+  texto: "Quina norma substitueix les ISO 14041, 14042 i 14043?",
   opciones: [
-    "a) La satisfacción de las necesidades provoca una presión exponencial sobre los recursos",
-    "b) La satisfacción de las necesidades se realiza a través del consumo de bienes y servicios",
-    "c) Para un desarrollo sostenible deben satisfacerse las necesidades del presente aun comprometiendo la capacidad de las generaciones futuras para atender sus propias necesidades",
-    "d) La elasticidad de los factores implica suplir el agotamiento de materias primas por una mayor inversión que permita aumentar la eficiencia de los recursos o encontrar materiales sustitutivos."
+    "a) ISO 14044",
+    "b) ISO 14050",
+    "c) ISO 14025",
+    "d) ISO 9001"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina és una de les principals limitacions de l’ACV?",
+  opciones: [
+    "a) La manca de dades i el temps necessari per realitzar-lo",
+    "b) Només s’aplica a productes químics",
+    "c) No té aplicació industrial",
+    "d) No quantifica emissions"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina fase NO forma part de la metodologia d’un ACV?",
+  opciones: [
+    "a) Definició d’objectius i abast",
+    "b) Anàlisi d’inventari",
+    "c) Publicitat i màrqueting",
+    "d) Interpretació de resultats"
   ],
   correcta: "c"
 },
 {
-  texto: "¿Cuál de las siguientes afirmaciones es correcta?",
+  texto: "Què inclou la fase de definició d’objectiu i abast en un ACV?",
   opciones: [
-    "a) El Protocolo de Kioto todavia está vigente.",
-    "b) El Protocolo de Kioto entró en vigor cuando lo firmaron 55 países representando el 55% de las emisiones de gases de efecto invernadero emitidas en el año 1990.",
-    "c) El Protocolo de Kioto regula sólo las emisiones de CO2.",
-    "d) El Acuerdo de París ratificado el 2016 tiene como objetivo la reducción de las emisiones de gases de efecto invernadero en un 100% el 2030."
+    "a) Només la identificació dels residus generats",
+    "b) L’objectiu de l’estudi, els límits del sistema i la unitat funcional",
+    "c) El càlcul de costos energètics",
+    "d) Només la selecció de materials reciclats"
   ],
   correcta: "b"
 },
 {
-  texto: "Respecto al Sistema de Gestión Ambiental EMAS, ¿cuál de las siguientes afirmaciones es falsa?",
+  texto: "Què és la unitat funcional dins d’un ACV?",
   opciones: [
-    "a) Las empresas que han implantado un sistema EMAS pueden poner el logo de EMAS en el envase de los productos que fabrican.",
-    "b) Contribuye a mejorar la relación de la empresa con el entorno.",
-    "c) Reporta beneficios económicos a largo plazo.",
-    "d) Utiliza indicadores relativos para no penalizar el crecimiento de la empresa."
+    "a) La unitat de referència que permet comparar tots els inputs i outputs",
+    "b) El cost d’un producte per unitat",
+    "c) El temps de vida útil d’un producte",
+    "d) El nombre d’usuaris finals"
   ],
   correcta: "a"
 },
 {
-  texto: "Señala la respuesta falsa:",
+  texto: "Què és l’anàlisi d’inventari dins de l’ACV?",
   opciones: [
-    "a) El Mecanismo de Aplicación Conjunta pone en contacto países en vías de desarrollo y países ya desarrollados.",
-    "b) El Comercio de Emisiones existe tanto a nivel de países como de instalaciones.",
-    "c) Los países en vías de desarrollo no están obligados a implementar Mecanismos de Desarrollo Limpio.",
-    "d) Tanto en el Mecanismo de Aplicación Conjunta como en el Mecanismo de Desarrollo Limpio, la reducción de emisiones se calcula a partir de las que se producirían en ausencia de la actividad proyectada."
+    "a) Un procés de quantificació de requeriments energètics i emissions durant tot el cicle de vida",
+    "b) L’estudi econòmic d’un producte",
+    "c) El registre de vendes anuals",
+    "d) La definició de les metes de sostenibilitat"
   ],
   correcta: "a"
 },
 {
-  texto: "¿Cuál de las siguientes afirmaciones es falsa?",
+  texto: "Quina és la funció principal de l’avaluació d’impacte en un ACV?",
   opciones: [
-    "a) Los Sistemas de Gestión Ambiental se aplican a productos.",
-    "b) Los Sistemas de Gestión Ambiental deben ser revisados periódicamente.",
-    "c) Tener un Sistema de Gestión Ambiental es voluntario.",
-    "d) El ahorro de recursos es una motivación para la implantación de Sistemas de Gestión Ambiental."
+    "a) Classificar i quantificar els possibles impactes sobre la salut humana i el medi ambient",
+    "b) Calcular la vida útil d’un recurs natural",
+    "c) Estimar el cost energètic de cada procés",
+    "d) Determinar la rendibilitat econòmica"
   ],
   correcta: "a"
 },
 {
-  texto: "¿Cuál de las siguientes afirmaciones es cierta?",
+  texto: "Què s’entén per normalització dins d’un ACV?",
   opciones: [
-    "a) El Análisis de Ciclo de Vida es un instrumento obligatorio para las empresas que quieren fabricar un producto nuevo.",
-    "b) Los Sistemas de Gestión Ambiental son obligatorios para licitar con la Administración Pública.",
-    "c) El cumplimiento de la Directiva sobre Emisiones Industriales es voluntario para las actividades del Anexo I.",
-    "d) Los Sistemas de Gestión Ambiental son instrumentos voluntarios que aplican a organizaciones."
-  ],
-  correcta: "d"
-},
-{
-  texto: "Señala la respuesta falsa:",
-  opciones: [
-    "a) Solo las industrias manufactureras pueden implementar un sistema de gestión ambiental.",
-    "b) El número de empresas certificadas con ISO 14001 es mucho mayor que el número de empresa registradas con un sistema EMAS.",
-    "c) El promotor del Reglamento EMAS es la administración pública (Unión Europea).",
-    "d) La adopción de la norma ISO 14001 es voluntaria."
+    "a) Comparar les categories d’impacte mitjançant valors de referència",
+    "b) Reduir el nombre de categories ambientals",
+    "c) Eliminar resultats no rellevants",
+    "d) Fer la mitjana de totes les emissions"
   ],
   correcta: "a"
 },
 {
-  texto: "El Portal de Emisiones Industriales permite conocer las emisiones contaminantes:",
+  texto: "Què és la fase d’agrupació en un ACV?",
   opciones: [
-    "a) De todas las empresas europeas.",
-    "b) De todas las empresas europeas que forman parte del Anexo I de la Directiva en Emisiones Industriales.",
-    "c) De las empresas europeas que forman parte del Anexo I de la Directiva en Emisiones Industriales y emiten por encima del valor umbral fijado (sin tener una aproximación sectorial).",
-    "d) De las empresas europeas que forman parte del Anexo I de la Directiva en Emisiones Industriales y emiten por encima del Valor Límite de Emisión fijado por la Mejor Técnica Disponible."
+    "a) Classificar els impactes segons àmbit geogràfic o importància",
+    "b) Eliminar categories repetides",
+    "c) Ordenar les dades per data",
+    "d) Assignar un cost econòmic a cada impacte"
   ],
-  correcta: "c"
+  correcta: "a"
 },
 {
-  texto: "¿Cuál de las siguientes afirmaciones es correcta?",
+  texto: "Què és la fase de ponderació dins d’un ACV?",
   opciones: [
-    "a) La huella ecológica mide la máxima población de una especie concreta que puede ser soportada en un hábitat determinado, sin disminuir permanentemente la productividad de éste.",
-    "b) La capacidad de carga representa la superficie de terreno o de agua ecológicamente productivos necesarios para generar los recursos y asimilar los residuos de una población determinada.",
-    "c) En España existe un superávit ecológico.",
-    "d) Todas las respuestas anteriores son falsas."
+    "a) Assignar pesos relatius a les diferents categories d’impacte segons la seva importància",
+    "b) Fer la mitjana de totes les emissions",
+    "c) Reduir el nombre d’impactes a dos o tres",
+    "d) Determinar només els efectes globals"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Per què la fase de ponderació no és científica?",
+  opciones: [
+    "a) Perquè depèn de valors subjectius i percepcions dels interessats",
+    "b) Perquè no utilitza dades ambientals reals",
+    "c) Perquè elimina informació del sistema",
+    "d) Perquè no considera emissions a l’aigua"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quin és l’objectiu de la fase d’interpretació en un ACV?",
+  opciones: [
+    "a) Analitzar els resultats i extreure conclusions clares i recomanacions",
+    "b) Repetir l’inventari per comprovar dades",
+    "c) Reduir els costos energètics del procés",
+    "d) Crear gràfics visuals dels impactes"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Què vol dir definir els límits del sistema en un ACV?",
+  opciones: [
+    "a) Escollir només la fase d’ús del producte",
+    "b) Determinar quines etapes i processos s’inclouen o s’exclouen de l’estudi",
+    "c) Fixar el preu de venda del producte",
+    "d) Seleccionar el país on es fabrica"
   ],
   correcta: "b"
 },
 {
-  texto: "¿Cuál de las siguientes afirmaciones es falsa?",
+  texto: "Què significa un estudi 'bressol-porta' (cradle-to-gate)?",
   opciones: [
-    "a) La capa de ozono no tiene relación directa con el cambio climático.",
-    "b) La degradación de la capa de ozono es causada principalmente por los clorofluorocarbonos (CFCS) liberados por actividades humanas.",
-    "c) La capa de ozono es una región de la atmósfera que protege la Tierra de la radiación solar ultravioleta.",
-    "d) La capa de ozono regula la temperatura global del planeta y es esencial para prevenir el cambio climático."
+    "a) Inclou des de l’extracció fins al final de vida",
+    "b) Inclou només la fase d’ús",
+    "c) Inclou des de l’extracció fins que el producte surt de fàbrica",
+    "d) Inclou exclusivament el reciclatge"
   ],
-  correcta: "d"
+  correcta: "c"
 },
 {
-  texto: "En relación a la legalización de actividades, ¿cuál de las siguientes afirmaciones es cierta?",
+  texto: "Què significa un estudi 'bressol-tomba' (cradle-to-grave)?",
   opciones: [
-    "a) Los Valores Límite de Emisión son de carácter sectorial, dependen de cada sector productivo.",
-    "b) El proyecto de legalización debe presentarse a todas las administraciones públicas afectadas.",
-    "c) Los permisos son indefinidos.",
-    "d) Los valores umbrales del Portal de Emisiones Industriales (antiguo Registro Europeo de Emisiones y Transferencia de Contaminantes E-PRTR) cambian en función del tipo de actividad."
-  ],
-  correcta: "d"
-},
-{
-  texto: "Señala la respuesta verdadera:",
-  opciones: [
-    "a) De acuerdo con la Directiva de Emisiones Industriales, una actividad nueva debe adoptar un enfoque basado en la reacción a la contaminación.",
-    "b) Una actividad que emite por encima del Valor Límite de Emisión es ilegal.",
-    "c) La última actualización de la Directiva sobre Emisiones Industriales introduce incentivos fiscales para aquellas industrias que logren reducir sus emisiones por debajo de los límites establecidos.",
-    "d) Una actividad que emite por encima del valor umbral fijado en el Portal de Emisiones Industriales no es legal."
+    "a) Només considera la distribució",
+    "b) Des de l’extracció de matèries primeres fins al final de vida",
+    "c) Exclusivament l’ús i manteniment",
+    "d) Només el tractament de residus"
   ],
   correcta: "b"
 },
 {
-  texto: "¿Cuál de las siguientes respuestas es cierta?",
+  texto: "Per què és clau la unitat funcional en un ACV comparatiu?",
   opciones: [
-    "a) La predicción de temperaturas futuras conlleva el uso de modelos de simulación y escenarios de emisiones.",
-    "b) La concentración de CO2 va a disminuir a lo largo del siglo XXI en todos los escenarios.",
-    "c) La generación de emisiones de CO2 va a aumentar a lo largo del siglo XXI en todos los escenarios.",
-    "d) Los impactos del cambio climático se distribuirán de forma uniforme en todo el planeta."
-  ],
-  correcta: "a"
-},
-{
-  texto: "Señala la respuesta correcta:",
-  opciones: [
-    "a) Los escenarios futuros de clima predicen más situaciones extremas en términos de frío.",
-    "b) Los modelos de predicción climática a escala regional ofrecen una menor precisión que los modelos globales.",
-    "c) Se prevé un incremento mayor de temperatura bajo el escenario SSP5-8.5 que en el escenario SSP1-1.9.",
-    "d) En la subregión Mediterranea, se prevé un incremento de la precipitación a finales de siglo."
+    "a) Perquè defineix qui paga l’estudi",
+    "b) Perquè determina la mida del producte",
+    "c) Perquè assegura la comparabilitat entre alternatives",
+    "d) Perquè fixa el cost energètic"
   ],
   correcta: "c"
 },
 {
-  texto: "Respecte al concepte de 'desenvolupament sostenible', quina de les següents respostes és falsa?",
+  texto: "Què és l’assignació de càrregues en sistemes amb diversos productes?",
   opciones: [
-    "a) Desenvolupar-se consisteix en satisfer les necessitats, creant una pressió exponencial sobre els recursos.",
-    "b) La satisfacció de les necessitats es realitza mitjançant el consum de béns i serveis.",
-    "c) Per aconseguir un desenvolupament sostenible, les necessitats de les generacions presents s’han de satisfer sense comprometre la capacitat de les generacions futures de satisfer les seves pròpies necessitats.",
-    "d) La taxa de generació de residus d'un país no ha de superar la seva capacitat d'assimilació més l'exportació a altres països."
+    "a) Repartir impactes entre productes quan el sistema genera més d’un output",
+    "b) Incrementar els impactes del producte principal",
+    "c) Eliminar els co-productes de l’anàlisi",
+    "d) Traslladar tots els impactes al consumidor"
   ],
-  correcta: "d"
+  correcta: "a"
 },
 {
-  texto: "Quina de les següents respostes no és un pilar fonamental del concepte de desenvolupament sostenible?",
+  texto: "Quina és una pràctica recomanada abans d’assignar càrregues?",
   opciones: [
-    "a) Creixement econòmic.",
-    "b) Protecció i millora del medi ambient.",
-    "c) Equitat social.",
-    "d) Totes les altres afirmacions són correctes."
-  ],
-  correcta: "d"
-},
-{
-  texto: "En relació a l'Anàlisi de Cicle de Vida (ACV), quina de les següents afirmacions és falsa?",
-  opciones: [
-    "a) L'ACV inclou els següents passos interrelacionats: (1) Definició d'objectius i abast, (2) Anàlisi d'inventari, (3) Avaluació d'impacte i (4) Interpretació.",
-    "b) Els principis i l'estructura de l'ACV estan definits en la norma UNE-EN ISO 9000 Gestió Ambiental.",
-    "c) L'ACV és útil quan es comparen materials, productes, processos o activitats des d'un punt de vista ambiental.",
-    "d) L'ACV és un procés utilitzat per avaluar les càrregues ambientals associades a un producte, procés o activitat al llarg del seu cicle de vida."
+    "a) Ignorar els co-productes",
+    "b) Ampliar el sistema o utilitzar relacions físiques/econòmiques justificades",
+    "c) Duplicar els impactes per prudència",
+    "d) Assignar aleatòriament per simplicitat"
   ],
   correcta: "b"
 },
 {
-  texto: "L'ACV permet:",
+  texto: "En la fase d’anàlisi d’inventari, quina tasca és habitual?",
   opciones: [
-    "a) Desplaçar problemes ambientals d'un medi a un altre.",
-    "b) Quantificar les emissions ambientals a l'aire, a l'aigua i al sòl en relació amb cada etapa del cicle de vida i/o amb els processos principals.",
-    "c) Realitzar una comparació ràpida del comportament ambiental de dos productes similars.",
-    "d) Avaluar la sensibilitat de l'entorn."
+    "a) Dibuixar diagrames de flux de processos",
+    "b) Fixar objectius de vendes",
+    "c) Fer enquestes de satisfacció",
+    "d) Estimar el marge comercial"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina d’aquestes NO és una categoria d’impacte típica en ACV?",
+  opciones: [
+    "a) Escalfament global",
+    "b) Deteriorament de la capa d’ozó",
+    "c) Productivitat laboral",
+    "d) Acidificació"
+  ],
+  correcta: "c"
+},
+{
+  texto: "Quina d’aquestes categories és d’abast global?",
+  opciones: [
+    "a) Escalfament global",
+    "b) Formació d’smog",
+    "c) Acidificació",
+    "d) Eutrofització local"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina d’aquestes categories tendeix a ser regional?",
+  opciones: [
+    "a) Deteriorament de la capa d’ozó",
+    "b) Formació d’smog i acidificació",
+    "c) Esgotament de recursos",
+    "d) Ús del sòl"
   ],
   correcta: "b"
 },
 {
-  texto: "Quan un sistema o un subsistema proporciona diferents productes i no tots ells estan inclosos dins dels límits de l'ACV:",
+  texto: "Quins 'àmbits de protecció' es solen considerar en ACV?",
   opciones: [
-    "a) S'ha de fer una assignació de càrregues.",
-    "b) S'han de caracteritzar els impactes.",
-    "c) S'han de normalitzar els impactes.",
-    "d) S'ha d'indicar la profunditat de l'estudi."
+    "a) Economia, mercat i màrqueting",
+    "b) Salut humana, ecosistemes i recursos",
+    "c) Política, societat i educació",
+    "d) Energia, aigua i residus"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Què fa la fase de classificació en l’avaluació d’impacte?",
+  opciones: [
+    "a) Converteix impactes a euros",
+    "b) Assigna les emissions i recursos a categories d’impacte pertinents",
+    "c) Defineix la unitat funcional",
+    "d) Estableix els límits geogràfics"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Què fa la fase de caracterització en ACV?",
+  opciones: [
+    "a) Agrega totes les categories en un sol índex",
+    "b) Aplica factors d’equivalència per estimar indicadors comparables dins de cada categoria",
+    "c) Elimina emissions no significatives",
+    "d) Calcula costos energètics"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Un exemple de factor de caracterització per a escalfament global és:",
+  opciones: [
+    "a) L’energia primària equivalent",
+    "b) El potencial d’escalfament global (GWP) en kg CO₂-eq",
+    "c) L’índex de toxicitat laboral",
+    "d) L’índex de confort tèrmic"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Què és la normalització en ACV?",
+  opciones: [
+    "a) Dividir els resultats per un valor de referència per facilitar comparacions",
+    "b) Eliminar categories locals",
+    "c) Convertir tots els resultats a unitats monetàries",
+    "d) Repetir l’inventari amb més dades"
   ],
   correcta: "a"
 },
 {
-  texto: "L'inventari del cicle de vida permet:",
+  texto: "Quin exemple de referència de normalització apareix als apunts?",
   opciones: [
-    "a) Convertir la informació recopilada en informació interpretable.",
-    "b) Avaluar els possibles impactes sobre la salut humana i l'ambient d'un producte, procés o activitat.",
-    "c) Quantificar els requisits energètics i de matèries primeres, les emissions atmosfèriques, les emissions de corrents residuals líquides, els residus sòlids i altres emissions per a tot el cicle de vida d'un producte, procés o activitat.",
-    "d) Definir l'objectiu i l'abast de l'estudi."
+    "a) 1 Ecopunt = impacte d’1 ciutadà del món en 1 any",
+    "b) 100 Ecopunts = impacte d’1 ciutadà de la UE en 1 any",
+    "c) 10 Ecopunts = impacte d’1 empresa mitjana",
+    "d) 1.000 Ecopunts = impacte d’una ciutat"
   ],
-  correcta: "c"
+  correcta: "b"
 },
 {
-  texto: "La Directiva 2010/75/UE sobre emissions industrials es basa en el principi de:",
+  texto: "Què implica l’agrupació (grouping) en ACV?",
   opciones: [
-    "a) Compensació econòmica",
-    "b) Múltiples finestres",
-    "c) Permisos permanents",
-    "d) Dret del públic a participar"
-  ],
-  correcta: "d"
-},
-{
-  texto: "Dins del marc de la Llei 20/2009 de prevenció i control ambiental de les activitats:",
-  opciones: [
-    "a) Les activitats de l'Annex I estan subjectes a autorització ambiental amb declaració d'impacte ambiental o Declaració d'impacte ambiental amb autorització substantiva.",
-    "b) Les activitats de l'Annex II estan subjectes a llicència ambiental.",
-    "c) Les activitats de l'Annex III estan subjectes a comunicació ambiental.",
-    "d) Totes les afirmacions són certes."
-  ],
-  correcta: "d"
-},
-{
-  texto: "Respecte a una activitat inclosa a l'Annex III de la Llei 20/2009 sobre prevenció i control ambiental de les activitats que es troba en una població amb 100.000 habitants, qui és el responsable d'emetre el permís?",
-  opciones: [
-    "a) La Generalitat de Catalunya",
-    "b) El Consell Comarcal",
-    "c) L'Associació de Veïns",
-    "d) L'Ajuntament"
-  ],
-  correcta: "d"
-},
-{
-  texto: "La Directiva 2010/75/UE sobre emissions industrials:",
-  opciones: [
-    "a) Estableix valors límit d'emissió per a cada activitat inclosa a l'Annex I.",
-    "b) Té com a objectiu principal la reparació dels danys ambientals.",
-    "c) Prescriu l'ús de tècniques o tecnologies específiques depenent de l'annex de l'activitat.",
-    "d) Exigeix obtenir un permís en cas d'estar inclosos dins de l'Annex I."
-  ],
-  correcta: "d"
-},
-{
-  texto: "Respecte als gasos d'efecte hivernacle, quina de les següents afirmacions és falsa?",
-  opciones: [
-    "a) El vapor d'aigua no és un gas d'efecte hivernacle.",
-    "b) El diòxid de carboni (CO2), el metà (CH4) i l'òxid nitrós (N2O) estan presents de manera natural a l'atmosfera però també són d'origen antropogènic.",
-    "c) Els gasos d'efecte hivernacle són transparents a l'energia d’ona curta.",
-    "d) El Potencial d'Escalfament Global de l'hexafluorur de sofre (SF6) és superior al Potencial d'Escalfament Global del diòxid de carboni (CO2)."
+    "a) Classificar o prioritzar indicadors per àmbit geogràfic o rellevància",
+    "b) Eliminar categories amb valors baixos",
+    "c) Sumar-ho tot en un únic resultat",
+    "d) Fer la mitjana dels resultats normalitzats"
   ],
   correcta: "a"
 },
 {
-  texto: "Pel que fa als escenaris d'emissió, quina de les següents afirmacions és certa?",
+  texto: "Per què la ponderació (weighting) requereix transparència?",
   opciones: [
-    "a) En tots els escenaris d'emissió, les emissions de CO2 augmentaran durant el segle XXI.",
-    "b) En tots els escenaris d'emissió, les emissions de CO2 disminuiran durant el segle XXI.",
-    "c) En tots els escenaris d'emissió, la concentració de CO2 a l'atmosfera augmentarà durant el segle XXI.",
-    "d) En tots els escenaris d'emissió, la concentració de CO2 a l'atmosfera disminuirà durant el segle XXI."
+    "a) Perquè utilitza exclusivament dades experimentals",
+    "b) Perquè incorpora valors i judicis subjectius dels interessats",
+    "c) Perquè és una etapa purament física",
+    "d) Perquè sempre dóna el mateix resultat"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quina limitació metodològica s’indica als apunts sobre l’ACV?",
+  opciones: [
+    "a) No pot comparar productes",
+    "b) No té aplicació industrial real",
+    "c) No considera la sensibilitat de l’entorn i requereix hipòtesis clares",
+    "d) No permet fer inventaris d’entrades/sortides"
   ],
   correcta: "c"
 },
 {
-  texto: "Quina de les següents afirmacions és certa?",
+  texto: "En l’exemple 'aigua d’aixeta vs embotellada', quin input és propi de l’aigua embotellada?",
   opciones: [
-    "a) Segons el Protocol de Kyoto, l’Estat Espanyol havia de disminuir les seves emissions de CO2, N2O i CH4 en un 8% respecte als nivells de l'any 90 durant el període 2008-2012.",
-    "b) Segons el Protocol de Kyoto, l’Estat Espanyol havia de disminuir les seves emissions de CO2, N2O i CH4 en un 5% respecte als nivells de l'any 90 durant el període 2008-2012.",
-    "c) Segons el Protocol de Kyoto, l’Estat Espanyol podia augmentar les seves emissions de CO2, N2O i CH4 en un 15% respecte als nivells de l'any 90 durant el període 2008-2012.",
-    "d) Espanya no ha ratificat el Protocol de Kyoto, i per tant, no té límits en la generació d'emissions de CO2, N2O i CH4."
+    "a) Consum d’acer per fabricar aixetes",
+    "b) Consum de petroli per fabricar plàstic d’ampolles",
+    "c) Energia de xarxa per bombament municipal",
+    "d) Residus de depuradora"
+  ],
+  correcta: "b"
+},
+{
+  texto: "En el mateix exemple, quin output és característic de l’aigua embotellada?",
+  opciones: [
+    "a) Residus extrets en potabilització",
+    "b) Lixiviats de dessaladores",
+    "c) Residus d’ampolles, taps, etiquetes i tòners de tinta",
+    "d) Boues d’EDAR municipals"
   ],
   correcta: "c"
 },
 {
-  texto: "Quina de les següents afirmacions és falsa?",
+  texto: "Quina és una bona pràctica de comunicació de resultats en ACV segons la fase d’interpretació?",
   opciones: [
-    "a) El Protocol de Kyoto va entrar en vigor el 2005.",
-    "b) La millor opció per fer front al canvi climàtic és implementar mesures d'adaptació en línia amb mesures de mitigació.",
-    "c) Els Plans Nacionals d'Assignació de Drets d'Emissió regulen qüestions de comerç internacional.",
-    "d) Els països en vies de desenvolupament que ja han ratificat el Protocol de Kyoto no havien de complir cap límit d'emissions."
+    "a) Presentar només els impactes més baixos",
+    "b) Documentar limitacions, hipòtesis i recomanacions de manera transparent",
+    "c) Ometre els valors de normalització",
+    "d) Utilitzar sempre una única categoria d’impacte"
   ],
-  correcta: "c"
+  correcta: "b"
 },
 {
-  texto: "Pel que fa a EMAS i ISO 14001, quina de les següents afirmacions és falsa?",
+  texto: "Quina afirmació és certa sobre la comparabilitat d’ACV entre alternatives?",
   opciones: [
-    "a) Per verificar que el sistema de gestió ambiental compleix els requisits, en cas del Reglament EMAS es fa una certificació mentre que en cas de la norma ISO 14001 es realitza una verificació.",
-    "b) La comunicació externa dels resultats no és obligatòria en l'estàndard ISO 14001, mentre que el Reglament EMAS manté aquesta obligació.",
-    "c) El Reglament EMAS és d’àmbit europeu, mentre que la norma ISO 14001 és d’àmbit internacional.",
-    "d) Tant EMAS com ISO 14001 són voluntaris."
+    "a) No cal la mateixa unitat funcional",
+    "b) Cal mantenir la mateixa unitat funcional i límits del sistema coherents",
+    "c) És suficient comparar costos energètics",
+    "d) Només cal la mateixa tecnologia de producció"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quin és un objectiu típic de fer un ACV d’un producte?",
+  opciones: [
+    "a) Triar l’alternativa amb menor impacte ambiental total",
+    "b) Estimar la quota de mercat",
+    "c) Fixar el preu de venda",
+    "d) Preveure la satisfacció del client"
   ],
   correcta: "a"
 },
 {
-  texto: "Pel que fa a EMAS, quina de les següents afirmacions és falsa?",
+  texto: "Quin dels següents és un exemple de dada d’inventari?",
   opciones: [
-    "a) El Reglament EMAS és voluntari.",
-    "b) El Reglament EMAS promou la millora contínua del comportament ambiental de les organitzacions, entre altres.",
-    "c) El Reglament EMAS només s'aplica a organitzacions privades.",
-    "d) Un dels principals beneficis per a les organitzacions que implementen EMAS és augmentar la motivació i la conscienciació dels treballadors."
+    "a) kg de CO₂-eq per unitat funcional (resultat caracteritzat)",
+    "b) kWh consumits per unitat funcional (entrada de procés)",
+    "c) Ponderació regional aplicada",
+    "d) Ecopunts normalitzats a escala UE"
   ],
-  correcta: "c"
+  correcta: "b"
 },
 {
-  texto: "Pel que fa als Sistemes de Gestió Ambiental, quina de les següents afirmacions és certa?",
+  texto: "Quan un flux contribueix a dues categories (p. ex., NOx), què es pot fer en classificació?",
   opciones: [
-    "a) Van néixer a la dècada dels 90 com a instrument voluntari per a aquelles empreses que volien assolir un alt nivell de protecció ambiental.",
-    "b) Inclouen l'estructura organitzativa, responsabilitats, pràctiques, procediments, processos i recursos per determinar i implementar la política ambiental.",
-    "c) Són una manera sistemàtica i planificada de gestionar els aspectes ambientals de l'empresa.",
-    "d) Totes les anteriors són certes."
+    "a) Assignar-lo només a una categoria",
+    "b) Repartir-lo entre categories quan els efectes estan relacionats o independents segons s’indiqui",
+    "c) Eliminar-lo per evitar doble recompte",
+    "d) Convertir-lo a CO₂-eq i prou"
   ],
-  correcta: "d"
+  correcta: "b"
 },
 {
-  texto: "Pel que fa als Sistemes de Gestió Ambiental, quina de les següents afirmacions és falsa?",
+  texto: "Quina opció descriu millor el paper dels 'stakeholders' en un ACV contractat?",
   opciones: [
-    "a) Tant el Reglament EMAS com la norma ISO 14001 es basen en el Cicle de Deming.",
-    "b) La certificació ISO 14001:2004 és l'acte pel qual un tercer dona proves de la conformitat del sistema de gestió ambiental de l'organització en relació amb els requisits establerts en la norma ISO 14001:2004.",
-    "c) La política ambiental quantifica l'objectiu ambiental a assolir l'any vinent.",
-    "d) Les auditories externes són obligatòries tant en el Reglament EMAS com en la norma ISO 14001."
+    "a) No hi tenen cap rol",
+    "b) Poden influir en objectius, abast i valors de ponderació; cal declarar-ho",
+    "c) Decideixen la unitat funcional sense justificació",
+    "d) Substitueixen els verificadors tècnics"
   ],
-  correcta: "c"
+  correcta: "b"
+},
+{
+  texto: "Quin avantatge aporta expressar impactes en unitats comunes com Ecopunts?",
+  opciones: [
+    "a) Evita fer inventaris",
+    "b) Permet comparar categories diferents amb una escala comuna (després de normalitzar/ponderar)",
+    "c) Converteix tot a costos monetaris",
+    "d) Elimina la necessitat de caracterització"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quina és una decisió clau a la fase de definició d’objectiu i abast?",
+  opciones: [
+    "a) Escollir els canals de venda",
+    "b) Precisar receptor, qui paga l’estudi i el seu ús previst",
+    "c) Determinar el disseny gràfic de l’informe",
+    "d) Establir el preu de l’estudi"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quin element forma part de la documentació de la fase d’inventari?",
+  opciones: [
+    "a) Tècniques de recopilació i càlcul de dades emprades",
+    "b) Estratègia comercial",
+    "c) Pla de comunicació externa",
+    "d) Benchmark de preus"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina de les següents opcions és coherent amb l’ús de factors d’equivalència?",
+  opciones: [
+    "a) Convertir CH₄ i N₂O a kg CO₂-eq per sumar-los en escalfament global",
+    "b) Convertir kWh a litres d’aigua",
+    "c) Convertir residus sòlids a NOx",
+    "d) Convertir emissions d’aigua a dB(A)"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina és una conclusió típica quan es fa un ACV d’alternatives de packaging?",
+  opciones: [
+    "a) Els impactes sempre són idèntics",
+    "b) Els impactes es distribueixen per etapes; canvis en fabricació o transport poden invertir el resultat final",
+    "c) El material més lleuger sempre té menor impacte",
+    "d) El reciclatge no influeix en els resultats"
+  ],
+  correcta: "b"
 }
 ];
 // --- FRASES DE ÁNIMO ---
@@ -811,4 +651,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
