@@ -529,6 +529,136 @@ const preguntas = [
     "d) El reciclatge no influeix en els resultats"
   ],
   correcta: "b"
+},
+  {
+  texto: "En una anàlisi de cicle de vida, què inclou la fase d’inputs?",
+  opciones: [
+    "a) Residus sòlids i líquids",
+    "b) Consum de matèries primeres, energia i aigua",
+    "c) Dades de transport i distribució",
+    "d) Ús de materials reciclats únicament"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quin any apareixen les primeres directrius metodològiques comunes per a l’ACV?",
+  opciones: [
+    "a) 1969",
+    "b) 1980",
+    "c) 1990",
+    "d) 1997"
+  ],
+  correcta: "c"
+},
+{
+  texto: "Quina entitat va unificar la metodologia de l’Anàlisi de Cicle de Vida durant els anys 90?",
+  opciones: [
+    "a) ONU",
+    "b) SETAC (Societat de Toxicologia i Química Ambiental)",
+    "c) EPA",
+    "d) ISO"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quina norma ISO estableix els principis generals i l’estructura de l’ACV?",
+  opciones: [
+    "a) ISO 9001",
+    "b) ISO 14040",
+    "c) ISO 14044",
+    "d) ISO 26000"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quina norma ISO substitueix les ISO 14041, 14042 i 14043?",
+  opciones: [
+    "a) ISO 14001",
+    "b) ISO 14044",
+    "c) ISO 14050",
+    "d) ISO 14046"
+  ],
+  correcta: "b"
+},
+{
+  texto: "En un ACV, què inclou la fase d’outputs?",
+  opciones: [
+    "a) Energia i matèries primeres utilitzades",
+    "b) Residus generats i emissions a l’aire, aigua i sòl",
+    "c) Beneficis econòmics del producte",
+    "d) Ús d’energia renovable"
+  ],
+  correcta: "b"
+},
+{
+  texto: "En quin any es van fer els primers estudis multicriteri sobre una ampolla de plàstic de Coca-Cola?",
+  opciones: [
+    "a) 1969",
+    "b) 1973",
+    "c) 1980",
+    "d) 1990"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quin va ser l’objectiu dels primers estudis d’ACV durant la crisi del petroli dels anys 70?",
+  opciones: [
+    "a) Avaluar l’eficiència de fonts d’energia",
+    "b) Millorar la gestió dels residus plàstics",
+    "c) Reduir la contaminació de l’aigua",
+    "d) Estudiar l’impacte dels fertilitzants químics"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Què és la unitat funcional dins d’un ACV?",
+  opciones: [
+    "a) El valor econòmic d’un producte",
+    "b) La unitat de referència amb la qual es comparen tots els inputs i outputs del sistema",
+    "c) El temps de vida útil d’un producte",
+    "d) El conjunt de dades energètiques del procés"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quina de les següents fases forma part de la metodologia de l’ACV?",
+  opciones: [
+    "a) Definició de l’objectiu i abast",
+    "b) Comercialització del producte",
+    "c) Estudi de mercat i màrqueting",
+    "d) Control financer"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina informació inclou l’anàlisi d’inventari d’un ACV?",
+  opciones: [
+    "a) Només els costos econòmics",
+    "b) Els requeriments energètics, matèries primeres, emissions i residus del cicle de vida",
+    "c) El rendiment econòmic d’un producte",
+    "d) Els resultats de les auditories ambientals"
+  ],
+  correcta: "b"
+},
+{
+  texto: "En la fase d’agrupació d’un ACV, quina de les següents afirmacions és correcta?",
+  opciones: [
+    "a) Es classifiquen els impactes segons el seu àmbit geogràfic (local, regional, global)",
+    "b) Es calcula la mitjana dels impactes econòmics",
+    "c) Es fusionen totes les categories d’impacte en una sola",
+    "d) Es prioritzen les emissions positives"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Per què la fase de ponderació d’un ACV no és un procés científic?",
+  opciones: [
+    "a) Perquè es basa en valors i judicis subjectius dels interessats",
+    "b) Perquè no utilitza dades ambientals reals",
+    "c) Perquè elimina els resultats anteriors de l’ACV",
+    "d) Perquè no considera la fase d’inventari"
+  ],
+  correcta: "a"
 }
 ];
 // --- FRASES DE ÁNIMO ---
@@ -651,5 +781,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
