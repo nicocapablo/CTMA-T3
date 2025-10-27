@@ -34,7 +34,7 @@ const preguntas = [
   texto: "Quines són les sortides (outputs) d’un ACV?",
   opciones: [
     "a) Productes acabats i beneficis econòmics",
-    "b) Residus sòlids, líquids i gasosos",
+    "b) Residus: sòlids, líquids i gasosos",
     "c) Energia i matèries primeres",
     "d) Materials reciclats"
   ],
@@ -173,7 +173,7 @@ const preguntas = [
 {
   texto: "Què és la fase d’agrupació en un ACV?",
   opciones: [
-    "a) Classificar els impactes segons àmbit geogràfic o importància",
+    "a) Classificar els impactes segons",
     "b) Eliminar categories repetides",
     "c) Ordenar les dades per data",
     "d) Assignar un cost econòmic a cada impacte"
@@ -659,7 +659,129 @@ const preguntas = [
     "d) Perquè no considera la fase d’inventari"
   ],
   correcta: "a"
-}
+},
+{
+  texto: "Què es fa durant la fase de normalització dins d’un ACV?",
+  opciones: [
+    "a) Es comparen les diferents categories d’impacte dividint-les per un valor de referència",
+    "b) Es calcula la petjada econòmica del producte",
+    "c) Es redueixen automàticament els impactes ambientals",
+    "d) Es prioritzen només els impactes locals"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quines fases inclou la metodologia de l’ACV?",
+  opciones: [
+    "a) Objectiu i abast, inventari, avaluació d’impacte i interpretació",
+    "b) Planificació, execució i auditoria",
+    "c) Producció, ús i transport",
+    "d) Producció i reciclatge únicament"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina norma estableix els principis generals de l’ACV?",
+  opciones: [
+    "a) ISO 14040",
+    "b) ISO 9001",
+    "c) ISO 45001",
+    "d) ISO 26000"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina norma defineix els requisits específics per realitzar un ACV complet?",
+  opciones: [
+    "a) ISO 14044",
+    "b) ISO 14001",
+    "c) ISO 50001",
+    "d) ISO 9004"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quina fase de l’ACV serveix per identificar els fluxos d’entrada i sortida del sistema?",
+  opciones: [
+    "a) Inventari de cicle de vida (ICV)",
+    "b) Avaluació d’impacte",
+    "c) Interpretació",
+    "d) Objectiu i abast"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quin és un exemple d’entrada (input) en un ACV?",
+  opciones: [
+    "a) Energia consumida o matèries primeres utilitzades",
+    "b) Residus sòlids generats",
+    "c) Emissions atmosfèriques",
+    "d) Productes acabats"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quin és un exemple de sortida (output) en un ACV?",
+  opciones: [
+    "a) Residus, emissions o productes finals",
+    "b) Matèries primeres utilitzades",
+    "c) Energia comprada",
+    "d) Proveïdors externs"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Què representa la 'unitat funcional' en un ACV?",
+  opciones: [
+    "a) La base de comparació entre diferents productes o sistemes",
+    "b) La quantitat total d’energia emprada",
+    "c) El cost econòmic per producte",
+    "d) El nombre de treballadors implicats"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Què implica la fase de normalització en un ACV?",
+  opciones: [
+    "a) Dividir els resultats per valors de referència per facilitar comparacions",
+    "b) Eliminar impactes locals",
+    "c) Sumar totes les emissions",
+    "d) Convertir resultats a valors econòmics"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Què és la fase de ponderació dins d’un ACV?",
+  opciones: [
+   "a) Assignar pesos relatius als impactes segons la seva importància ambiental",
+    "b) Agregar dades de consum energètic",
+    "c) Normalitzar per regions geogràfiques",
+    "d) Reduir la mida de la mostra"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Per què la fase de ponderació no és científica?",
+  opciones: [
+    "a) Perquè depèn de valors i judicis subjectius",
+    "b) Perquè no utilitza dades experimentals",
+    "c) Perquè ignora les emissions de CO₂",
+    "d) Perquè no considera els residus"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Quin és el principal avantatge d’utilitzar l’ACV en la presa de decisions?",
+  opciones: [
+    "a) Permet comparar objectivament impactes ambientals entre alternatives",
+    "b) Redueix automàticament els costos",
+    "c) Elimina els residus de producció",
+    "d) Substitueix els informes de sostenibilitat"
+  ],
+  correcta: "a"
+},
+
+
 ];
 // --- FRASES DE ÁNIMO ---
 const frases_animo = [
@@ -781,6 +903,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
 
